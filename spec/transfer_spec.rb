@@ -66,7 +66,7 @@ describe 'Transfer' do
       expect(transfer.status).to eq("complete")
       transfer.execute_transaction
       expect(amanda.balance).to eq(950)
-      expect(avi.balance).to eq(1050)
+      expect(avi.balance).to eq(1050) 
     end
 
     it "rejects a transfer if the sender does not have enough funds (does not have a valid account)" do
